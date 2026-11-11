@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Pilot — Flight Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="topbar">
+      <div class="brand">✈ SKY PILOT</div>
+      <div class="score">SCORE <span id="score">0</span></div>
+    </header>
+
+    <section class="game-area" id="gameArea">
+      <div class="cloud cloud-one">☁</div>
+      <div class="cloud cloud-two">☁</div>
+      <div class="sun"></div>
+
+      <div class="intro" id="intro">
+        <div class="big-plane">✈️</div>
+        <h1>SKY PILOT</h1>
+        <p>Твоё приключение начинается в небе!</p>
+        <button id="startBtn">НАЧАТЬ ПОЛЁТ</button>
+        <small>Управление: стрелки или W A S D</small>
+      </div>
+
+      <div class="plane" id="plane">✈</div>
+      <div id="obstacles"></div>
+
+      <div class="game-over hidden" id="gameOver">
+        <h2>ПОЛЁТ ЗАВЕРШЁН</h2>
+        <p>Твой результат: <span id="finalScore">0</span></p>
+        <button id="restartBtn">ПОПРОБОВАТЬ ЕЩЁ</button>
+      </div>
+    </section>
+
+    <footer>AVOID THE CLOUDS • COLLECT YOUR POINTS • FLY HIGH</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
